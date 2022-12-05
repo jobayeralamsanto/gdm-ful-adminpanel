@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+<!--<html lang="ar" dir="rtl">-->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
+    <meta name="author" content="Bdtask">
+    <title>Bhulua - Bootstrap 5 Admin Template Deshboard</title>
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/dist/img/favicon.png">
+    <!--Global Styles(used by all pages)-->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/plugins/metisMenu/metisMenu.css" rel="stylesheet">
+    <link href="assets/plugins/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="assets/plugins/typicons/src/typicons.min.css" rel="stylesheet">
+    <link href="assets/plugins/themify-icons/themify-icons.min.css" rel="stylesheet">
+    <link href="assets/plugins/select2/dist/css/select2.min.css" rel="stylesheet">
+
+    <link href="assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="assets/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet">
+    <link href="assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet">
+    <!--Third party Styles(used by this page)-->
+
+    <!--Start Your Custom Style Now-->
+    <link href="assets/dist/css/green-teal.css" rel="stylesheet">
+    <link href="assets/dist/css/extra.css" rel="stylesheet">
+</head>
+
+<body class="fixed sidebar-mini">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav class="sidebar sidebar-bunker">
+            <div class="sidebar-header">
+                <a href="index.html" class="sidebar-brand">
+                    <img class="sidebar-fav" src="assets/dist/img/mini-logo.png" alt="">
+                    <img class="sidebar-logo" src="assets/dist/img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="profile-element d-flex align-items-center flex-shrink-0">
+                <div class="avatar online">
+                    <img src="assets/dist/img/avatar-1.jpg" class="img-fluid rounded-circle" alt="">
+                </div>
+                <div class="profile-text">
+                    <h6 class="m-0">Naeem Khan</h6>
+                    <span>example@gmail.com</span>
+                </div>
+            </div>
+            <!--/.profile element-->
+            <form class="search sidebar-form" action="#" method="get">
+                <div class="search__inner">
+                    <input type="text" class="search__text" placeholder="Search...">
+                    <i class="typcn typcn-zoom-outline search__helper" data-sa-action="search-close"></i>
+                </div>
+            </form>
+            <!--/.search-->
+            <div class="sidebar-body">
+                <nav class="sidebar-nav">
+                    <ul class="metismenu">
+                        <li>
+                            <a class="has-arrow material-ripple" href="dashboard.html">
+                                <i class="typcn typcn-home-outline"></i>Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a class="has-arrow material-ripple" href="#">
+                                <i class="typcn typcn-cog-outline"></i>Setup
+                            </a>
+                            <ul class="nav-second-level">
+                                <li><a href="location-setup.html">Location setup</a></li>
+                                <li><a href="group-location.html">Group Location</a></li>
+                                <li>
+                                    <a class="has-arrow" href="#" aria-expanded="false">Team</a>
+                                    <ul class="nav-third-level">
+                                        <li><a href="add-new-team.html">Add New Team</a></li>
+                                        <li><a href="team-list.html">Team List</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="aplication-setting.html">Aplication Setting</a></li>
+                                <li><a href="language.html">Language</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow material-ripple" href="#">
+                                <i class="typcn typcn-starburst-outline"></i> Client Setup
+                            </a>
+                            <ul class="nav-second-level">
+                                <li><a href="add-client.html">Add Client</a></li>
+                                <li><a href="client-list.html">Client List</a></li>
+                                <li><a href="client-outlet-status.html">Client Outlet Status</a></li>
+                                <li><a href="add-map-client-outlet-type.html">Add Map Client Outlet Type</a></li>
+                                <li><a href="map-client-outlet-type.html">Map Client Outlet Type</a></li>
+                                <li><a href="add-map-client-channel.html">Add Map Client Channel</a></li>
+                                <li><a href="map-client-and-outlet.html">Map Client And Outlet</a></li>
+                                <li><a href="map-client-outlet-list.html">Map client outlet list</a></li>
+                                <li><a href="add-client-target.html">Add Client Target</a></li>
+                                <li><a href="client-target-list.html">Client Target List</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow material-ripple" href="#">
+                                <i class="typcn typcn-user-outline"></i>User
+                            </a>
+                            <ul class="nav-second-level">
+                                <li><a href="user-list.html">User List</a></li>
+                                <li><a href="device-request.html">Device request</a></li>
+                                <li><a href="user-login-logout-log.html">User login logout log</a></li>
+                                <li><a href="user-login-logout-count.html">User login logout Count</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow material-ripple" href="#">
+                                <i class="typcn typcn-home-outline"></i> Outlet
+                            </a>
+                            <ul class="nav-second-level">
+                                <li><a href="outlate-dashboard.html">Outlet Dashboard</a></li>
+                                <li><a href="add-channel.html">Add Channel</a></li>
+                                <li><a href="add-outlet-type.html">Add Outlet Type</a></li>
+                                <li><a href="add-outlate.html">Add Outlet</a></li>
+                                <li><a href="outlate-list.html">Outlet List</a></li>
+                                <li><a href="#">Outlet map to fieldstaff</a></li>
+                                <li><a href="#">Outlet map list</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow material-ripple" href="#">
+                                <i class="typcn typcn-group-outline"></i>Role
+                            </a>
+                            <ul class="nav-second-level">
+                                <li><a href="add-role.html">Add Role</a></li>
+                                <li><a href="role-list.html">Role List</a></li>
+                                <li><a href="user-access-role.html">User Access Role</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow material-ripple" href="#">
+                                <i class="typcn typcn-location-outline"></i>Outlet Visit Process
+                            </a>
+                            <ul class="nav-second-level">
+                                <li><a href="#">Dashboard</a></li>
+                                <li>
+                                    <a class="has-arrow" href="#" aria-expanded="false">Route Plan</a>
+                                    <ul class="nav-third-level">
+                                        <li><a href="add-new-route-plan.html">Add New Route Plan</a></li>
+                                        <li><a href="route-plan-list.html">Route Plan List</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="has-arrow" href="#" aria-expanded="false">Schedule</a>
+                                    <ul class="nav-third-level">
+                                        <li><a href="add-new-schedule.html">Add New Schedule</a></li>
+                                        <li><a href="schedule-list.html">Schedule List</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="exception-visit.html">Exception Visit</a></li>
+                            </ul>
+                        </li>
+                        <li class="mm-active">
+                            <a class="has-arrow material-ripple" href="#">
+                                <i class="typcn typcn-point-of-interest-outline"></i>Product Management
+                            </a>
+                            <ul class="nav-second-level">
+                                <li><a href="product-category.html">Product Category</a></li>
+                                <li class="mm-active"><a href="add-pos-item.html">Add Pos Item</a></li>
+                                <li>
+                                    <a class="has-arrow" href="#" aria-expanded="false">Product</a>
+                                    <ul class="nav-third-level">
+                                        <li><a href="add-new-product.html">Add New Product</a></li>
+                                        <li><a href="product-list.html">Product List</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="setup-key-sku.html">Setup Key SKU</a></li>
+                                <li><a href="add good-to-have-sku.html">Add Good to Have SKU</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow material-ripple" href="#">
+                                <i class="typcn typcn-shopping-cart"></i> Inventory
+                            </a>
+                            <ul class="nav-second-level">
+                                <li><a href="product-inventory.html">Product Inventory</a></li>
+                                <li><a href="product-checkouts.html">Product Checkouts</a></li>
+                                <li><a href="product-checkins.html">Product Checkins</a></li>
+                                <li><a href="product-batches.html">Product Batches</a></li>
+                                <li><a href="return-replace.html">Return Replace</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow material-ripple" href="#">
+                                <i class="typcn typcn-radar-outline"></i> Merchandise
+                            </a>
+                            <ul class="nav-second-level">
+                                <li><a href="merchandise-dashboard.html">Merchandise Dashboard</a></li>
+                                <li><a href="products-to-field-staff.html">Products to Field Staff</a></li>
+                                <li><a href="field-staff-product-list.html">Field Staff Product List</a></li>
+                                <li><a href="sales-order-from-outlet-list.html">Sales Order from Outlet List</a></li>
+                                <li><a href="popms Analysis.html">POPMs Analysis</a></li>
+                                <li><a href="planogram.html">Planogram</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow material-ripple" href="#">
+                                <i class="typcn typcn-credit-card"></i> Payments
+                            </a>
+                            <ul class="nav-second-level">
+                                <li><a href="payments.html">Payments</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow material-ripple" href="#">
+                                <i class="typcn typcn-image-outline"></i> Image
+                            </a>
+                            <ul class="nav-second-level">
+                                <li><a href="outlate-image.html">Outlate Image</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow material-ripple" href="#">
+                                <i class="typcn typcn-chart-line-outline"></i> Sales Management
+                            </a>
+                            <ul class="nav-second-level">
+                                <li><a href="sales-dashboard.html">Sales Dashboard</a></li>
+                                <li><a href="sales-list.html">Sales List</a></li>
+                                <li><a href="sold-product-list.html">Sold Product List</a></li>
+                                <li><a href="order.html">Order</a></li>
+                                <li><a href="account-receivbles.html">Account Receivbles</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow material-ripple" href="#">
+                                <i class="typcn typcn-book"></i> Fieldstaff
+                            </a>
+                            <ul class="nav-second-level">
+                                <li><a href="fieldstaff.html">Fieldstaff</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow material-ripple" href="#">
+                                <i class="typcn typcn-puzzle-outline"></i> Special Outlet
+                            </a>
+                            <ul class="nav-second-level">
+                                <li><a href="special-outlet-dashboard.html">Dashboard</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow material-ripple" href="#">
+                                <i class="typcn typcn-briefcase"></i> Events
+                            </a>
+                            <ul class="nav-second-level">
+                                <li><a href="event-dashboard.html">Event Dashboard</a></li>
+                                <li>
+                                    <a class="has-arrow" href="#" aria-expanded="false">Events</a>
+                                    <ul class="nav-third-level">
+                                        <li><a href="manage-event-types.html">Manage Event Types</a></li>
+                                        <li><a href="add-new-event.html">Add New Event</a></li>
+                                        <li><a href="manage-events.html">Manage Events</a></li>
+                                        <li><a href="manage-event-user.html">Manage Event User</a></li>
+                                        <li><a href="survey-mapping.html">Survey Mapping</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="has-arrow" href="#" aria-expanded="false">Checkin Checkout</a>
+                                    <ul class="nav-third-level">
+                                        <li><a href="checkout.html">Checkout</a></li>
+                                        <li><a href="checkout-list.html">Checkout list</a></li>
+                                        <li><a href="checkin.html">Checkin</a></li>
+                                        <li><a href="checkin-list.html">Checkin list</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="event-activities.html">Event Activities</a></li>
+                                <li><a href="event-sales.html">Sales</a></li>
+                                <li><a href="event-sales-list.html">Sales List</a></li>
+                                <li><a href="participants.html">Participants</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow material-ripple" href="#">
+                                <i class="typcn typcn-input-checked-outline"></i> Survey
+                            </a>
+                            <ul class="nav-second-level">
+                                <li><a href="survey-dashboard.html">Survey Dashboard</a></li>
+                                <li>
+                                    <a class="has-arrow" href="#" aria-expanded="false">Survey</a>
+                                    <ul class="nav-third-level">
+                                        <li><a href="survey-header.html">Survey Header</a></li>
+                                        <li><a href="required-participant-info.html">Required Participant Info</a></li>
+                                        <li><a href="survey-section.html">Survey Section</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="input-types.html">Input Types</a></li>
+                                <li>
+                                    <a class="has-arrow" href="#" aria-expanded="false">Options</a>
+                                    <ul class="nav-third-level">
+                                        <li><a href="option-choice.html">Option Choice</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="has-arrow" href="#" aria-expanded="false">Questions</a>
+                                    <ul class="nav-third-level">
+                                        <li><a href="add-question.html">Add Question</a></li>
+                                        <li><a href="manage-questions.html">Manage Questions</a></li>
+                                        <li><a href="question-options.html">Question Options</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="survey-preview.html">Survey Preview</a></li>
+                                <li><a href="survey-dataset.html">Survey dataset</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow material-ripple" href="#">
+                                <i class="typcn typcn-eye-outline"></i> Visibility
+                            </a>
+                            <ul class="nav-second-level">
+                                <li><a href="product-visibility.html">Product Visibility</a></li>
+                                <li><a href="sku-gaps.html">SKU Gaps</a></li>
+                                <li><a href="out-of-stock-list.html"> Out of Stock list</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow material-ripple" href="#">
+                                <i class="typcn typcn-world-outline"></i> Maps
+                            </a>
+                            <ul class="nav-second-level">
+                                <li><a href="maps.html">Maps</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow material-ripple" href="#">
+                                <i class="typcn typcn-document-text"></i> Notes
+                            </a>
+                            <ul class="nav-second-level">
+                                <li><a href="notes.html">Notes</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow material-ripple" href="#">
+                                <i class="typcn typcn-spiral"></i> Spin
+                            </a>
+                            <ul class="nav-second-level">
+                                <li><a href="spin-dashboard.html">Dashboard</a></li>
+                                <li><a href="gift-item.html">Gift Item</a></li>
+                                <li><a href="create-spin.html">Create Spin</a></li>
+                                <li><a href="manage-spin.html">Manage Spin</a></li>
+                                <li><a href="add-spin-stock.html">Add Spin Stock</a></li>
+                                <li><a href="manage-spin-stock.html">Manage Spin stock</a></li>
+                                <li><a href="manage-spin-winner.html">Manage Spin Winner</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow material-ripple" href="calendars.html">
+                                <i class="typcn typcn-calendar-outline"></i> Calendars
+                            </a>
+                        </li>
+                        <li>
+                            <a class="has-arrow material-ripple" href="briefs.html">
+                                <i class="typcn typcn-flow-switch"></i> Briefs
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- sidebar-body -->
+        </nav>
+        <!-- Page Content  -->
+        <div class="content-wrapper">
+            <div class="main-content">
+                <!--Navbar-->
+                <nav class="navbar-custom-menu navbar navbar-expand-xl m-0">
+                    <div class="sidebar-toggle-icon" id="sidebarCollapse">
+                        sidebar toggle<span></span>
+                    </div>
+                    <!--/.sidebar toggle icon-->
+                    <!-- Collapse -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- Toggler -->
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-expanded="true" aria-label="Toggle navigation"><span></span> <span></span></button>
+                    </div>
+                    <div class="navbar-icon d-flex">
+                        <ul class="navbar-nav flex-row align-items-center">
+                            <li class="nav-item dropdown quick-actions">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="typcn typcn-th-large-outline"></i>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="nav-grid-row row">
+                                        <a href="#" class="icon-menu-item col-4">
+                                            <i class="typcn typcn-cog-outline d-block"></i>
+                                            <span>Settings</span>
+                                        </a>
+                                        <a href="#" class="icon-menu-item col-4">
+                                            <i class="typcn typcn-group-outline d-block"></i>
+                                            <span>Users</span>
+                                        </a>
+                                        <a href="#" class="icon-menu-item col-4">
+                                            <i class="typcn typcn-puzzle-outline d-block"></i>
+                                            <span>Components</span>
+                                        </a>
+                                        <a href="#" class="icon-menu-item col-4">
+                                            <i class="typcn typcn-chart-bar-outline d-block"></i>
+                                            <span>Profits</span>
+                                        </a>
+                                        <a href="#" class="icon-menu-item col-4">
+                                            <i class="typcn typcn-time d-block"></i>
+                                            <span>New Event</span>
+                                        </a>
+                                        <a href="#" class="icon-menu-item col-4">
+                                            <i class="typcn typcn-edit d-block"></i>
+                                            <span>Tasks</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--/.dropdown-->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="btnFullscreen"><i class="full-screen_icon typcn typcn-arrow-move-outline"></i></a>
+                            </li>
+                            <li class="nav-item dropdown notification">
+                                <a class="nav-link dropdown-toggle badge-dot" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="typcn typcn-bell"></i>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <h6 class="notification-title">Notifications</h6>
+                                    <p class="notification-text text-muted">You have 2 unread notification</p>
+                                    <div class="notification-list">
+                                        <a href="#" class="notification text-reset d-flex new">
+                                            <div class="img-user flex-shrink-0"><img src="assets/dist/img/avatar.png" alt=""></div>
+                                            <div class="notification-body">
+                                                <h6>Congratulate <strong>Socrates Itumay</strong> for work anniversaries</h6>
+                                                <span class="text-muted"><i class="me-1 fst-normal" role="img" aria-label="Emoji">💬</i> Just Now</span>
+                                            </div>
+                                        </a>
+                                        <!--/.media -->
+                                        <a href="#" class="notification text-reset d-flex new">
+                                            <div class="img-user flex-shrink-0 online"><img src="assets/dist/img/avatar2.png" alt=""></div>
+                                            <div class="notification-body">
+                                                <h6><strong>Joyce Chua</strong> replied to your comment : "Hello world 😍"</h6>
+                                                <span class="text-muted">Mar 13 04:16am</span>
+                                            </div>
+                                        </a>
+                                        <!--/.media -->
+                                        <a href="#" class="notification text-reset d-flex d-grid">
+                                            <div class="img-user flex-shrink-0"><img src="assets/dist/img/avatar3.png" alt=""></div>
+                                            <div class="notification-body">
+                                                <div class="h6"><strong>Althea Cabardo</strong> commented
+                                                    <blockquote class="mb-0">“I don’t think this really makes sense to do without approval from Johnathan since he’s the one...” </blockquote>
+                                                </div>
+                                                <span class="text-muted">Mar 13 02:56am</span>
+                                            </div>
+                                        </a>
+                                        <!--/.media -->
+                                        <a href="#" class="notification text-reset d-flex">
+                                            <div class="img-user flex-shrink-0"><img src="assets/dist/img/avatar4.png" alt=""></div>
+                                            <div class="notification-body">
+                                                <h6><strong>Adrian Monino</strong> added new comment on your photo <span class="badge bg-success">Review</span></h6>
+                                                <span class="text-muted">Mar 12 10:40pm</span>
+                                            </div>
+                                        </a>
+                                        <!--/.media -->
+                                    </div>
+                                    <!--/.notification -->
+                                    <div class="dropdown-footer"><a href="">View All Notifications</a></div>
+                                </div>
+                                <!--/.dropdown-menu -->
+                            </li>
+                            <!--/.dropdown-->
+                            <li class="nav-item dropdown user-menu">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <!--<img src="assets/dist/img/user2-160x160.png" alt="">-->
+                                    <i class="typcn typcn-user-add-outline"></i>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-header d-sm-none">
+                                        <a href="" class="header-arrow"><i class="icon ion-md-arrow-back"></i></a>
+                                    </div>
+                                    <div class="user-header">
+                                        <div class="img-user">
+                                            <img src="assets/dist/img/avatar-1.jpg" alt="">
+                                        </div>
+                                        <!-- img-user -->
+                                        <h6>Naeem Khan</h6>
+                                        <span>example@gmail.com</span>
+                                    </div>
+                                    <!-- user-header -->
+                                    <a href="" class="dropdown-item"><i class="typcn typcn-user-outline"></i> My Profile</a>
+                                    <a href="" class="dropdown-item"><i class="typcn typcn-edit"></i> Edit Profile</a>
+                                    <a href="" class="dropdown-item"><i class="typcn typcn-arrow-shuffle"></i> Activity Logs</a>
+                                    <a href="" class="dropdown-item"><i class="typcn typcn-cog-outline"></i> Account Settings</a>
+                                    <a href="page-signin.html" class="dropdown-item"><i class="typcn typcn-key-outline"></i> Sign Out</a>
+                                </div>
+                                <!--/.dropdown-menu -->
+                            </li>
+                        </ul>
+                        <!--/.navbar nav-->
+                        <div class="nav-clock">
+                            <div class="time">
+                                <span class="time-hours"></span>
+                                <span class="time-min"></span>
+                                <span class="time-sec"></span>
+                            </div>
+                        </div>
+                        <!-- nav-clock -->
+                    </div>
+                </nav>
+                <!--/.navbar-->
+                <div class="body-content">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="fs-17 fw-semi-bold mb-0">Pos Item List</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table id="example" class="table display table-bordered table-striped table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>SL No.</th>
+                                                    <th>POS item</th>
+                                                    <th>User</th>
+                                                    <th>Client</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="fs-17 fw-semi-bold mb-0">Pos Item List</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table id="example" class="table display table-bordered table-striped table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>SL No.</th>
+                                                    <th>POS item</th>
+                                                    <th>User</th>
+                                                    <th>Client</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.body content-->
+
+            </div>
+            <!--/.main content-->
+            <footer class="footer-content">
+                <div class="footer-text d-flex align-items-center justify-content-between">
+                    <div class="copy">© 2018 Bdtask Responsive Bootstrap 5 Dashboard Template</div>
+                    <div class="credit">Designed by: <a href="#">Bdtask</a></div>
+                </div>
+            </footer>
+            <!--/.footer content-->
+            <div class="overlay"></div>
+        </div>
+        <!--/.wrapper-->
+    </div>
+    <!--Global script(used by all pages)-->
+    <script src="assets/plugins/jQuery/jquery.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/plugins/metisMenu/metisMenu.min.js"></script>
+    <script src="assets/plugins/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+    <!-- Third Party Scripts(used by this page)-->
+    <script src="assets/plugins/select2/dist/js/select2.min.js"></script>
+    <script src="assets/dist/js/pages/demo.select2.js"></script>
+
+
+    <script src="assets/plugins/datatables/dataTables.min.js"></script>
+    <script src="assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/plugins/datatables/dataTables.responsive.min.js"></script>
+    <script src="assets/plugins/datatables/responsive.bootstrap4.min.js"></script>
+    <script src="assets/plugins/datatables/dataTables.buttons.min.js"></script>
+    <script src="assets/plugins/datatables/buttons.bootstrap4.min.js"></script>
+    <script src="assets/plugins/datatables/jszip.min.js"></script>
+    <script src="assets/plugins/datatables/pdfmake.min.js"></script>
+    <script src="assets/plugins/datatables/vfs_fonts.js"></script>
+    <script src="assets/plugins/datatables/buttons.html5.min.js"></script>
+    <script src="assets/plugins/datatables/buttons.print.min.js"></script>
+    <script src="assets/plugins/datatables/buttons.colVis.min.js"></script>
+    <!--Page Active Scripts(used by this page)-->
+    <script src="assets/plugins/datatables/data-bootstrap4.active.js"></script>
+
+    <script src="assets/dist/js/sidebar.js"></script>
+
+
+</body>
+
+</html>
